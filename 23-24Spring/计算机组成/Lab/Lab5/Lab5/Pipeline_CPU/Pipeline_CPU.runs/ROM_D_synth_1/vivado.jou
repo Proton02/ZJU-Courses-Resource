@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Jun 14 19:07:27 2024
+# Process ID: 18712
+# Current directory: D:/COLab/Lab5/Pipeline_CPU/Pipeline_CPU.runs/ROM_D_synth_1
+# Command line: vivado.exe -log ROM_D.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_D.tcl
+# Log file: D:/COLab/Lab5/Pipeline_CPU/Pipeline_CPU.runs/ROM_D_synth_1/ROM_D.vds
+# Journal file: D:/COLab/Lab5/Pipeline_CPU/Pipeline_CPU.runs/ROM_D_synth_1\vivado.jou
+# Running On: BAMBOO, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33960 MB
+#-----------------------------------------------------------
+source ROM_D.tcl -notrace

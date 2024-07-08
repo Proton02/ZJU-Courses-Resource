@@ -1,0 +1,47 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Code/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_14 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Testbench_tb_behav xil_defaultlib.Testbench_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'ALU_Control' [D:/COLab/Lab5/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/new/EX.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Harzard_detection
+Compiling module xil_defaultlib.Forwarding
+Compiling module xil_defaultlib.Branch_Forwarding
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Mux3to1
+Compiling module xil_defaultlib.Mux2to1
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_reg_ID
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.Branch_control
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.ImmG
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.ID_reg_EX
+Compiling module xil_defaultlib.Store_control
+Compiling module xil_defaultlib.Mux6to1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_reg_MEM
+Compiling module xil_defaultlib.Load_control
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.MEM_reg_WB
+Compiling module xil_defaultlib.Mux5to1
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.Pipline_CPU
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module unisims_ver.RAMB36E1(RDADDR_COLLISION_HWCONF...
+Compiling module xil_defaultlib.RAM_B
+Compiling module dist_mem_gen_v8_0_14.dist_mem_gen_v8_0_14(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM_D
+Compiling module xil_defaultlib.Testbench
+Compiling module xil_defaultlib.Testbench_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Testbench_tb_behav

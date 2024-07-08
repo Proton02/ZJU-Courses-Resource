@@ -1,0 +1,487 @@
+
+*** Running vivado
+    with args -log CSSTE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CSSTE.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CSSTE.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 465.406 ; gain = 186.621
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/COLab/OExp02-IP2SOC/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Code/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/utils_1/imports/synth_1/CSSTE.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/utils_1/imports/synth_1/CSSTE.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CSSTE -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23200
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1327.133 ; gain = 439.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CSSTE' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/COLab/OExp02-IP2SOC/IP/SCPU.v:15]
+WARNING: [Synth 8-7071] port 'MIO_ready' of module 'SCPU' is unconnected for instance 'U1' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:55]
+WARNING: [Synth 8-7071] port 'CPU_MIO' of module 'SCPU' is unconnected for instance 'U1' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:55]
+WARNING: [Synth 8-7023] instance 'U1' of module 'SCPU' has 10 connections declared, but only 8 given [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:55]
+INFO: [Synth 8-6157] synthesizing module 'ROM_D' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/.Xil/Vivado-6372-BAMBOO/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_D' (0#1) [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/.Xil/Vivado-6372-BAMBOO/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RAM_B' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/.Xil/Vivado-6372-BAMBOO/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_B' (0#1) [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/.Xil/Vivado-6372-BAMBOO/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [D:/COLab/OExp02-IP2SOC/IP/MIO_BUS.v:15]
+INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [D:/COLab/OExp02-IP2SOC/IP/Multi_8CH32.v:15]
+INFO: [Synth 8-6157] synthesizing module 'Seg7_Dev_0' [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/synth/Seg7_Dev_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Seg7_Dev' [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/Seg7_Dev.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dispsync' [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/DisplaySync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dispsync' (0#1) [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/DisplaySync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MC_14495' [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/MC_14495.v:23]
+INFO: [Synth 8-6157] synthesizing module 'INV' [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (0#1) [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78119]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (0#1) [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1001]
+INFO: [Synth 8-6157] synthesizing module 'OR4' [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
+INFO: [Synth 8-6155] done synthesizing module 'OR4' (0#1) [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:97028]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (0#1) [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:953]
+INFO: [Synth 8-6157] synthesizing module 'OR3' [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
+INFO: [Synth 8-6155] done synthesizing module 'OR3' (0#1) [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96980]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (0#1) [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:905]
+INFO: [Synth 8-6157] synthesizing module 'OR2' [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
+INFO: [Synth 8-6155] done synthesizing module 'OR2' (0#1) [D:/Code/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:96934]
+INFO: [Synth 8-6155] done synthesizing module 'MC_14495' (0#1) [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/MC_14495.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Seg7_Dev' (0#1) [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/Seg7_Dev.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Seg7_Dev_0' (0#1) [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/Seg7_Dev_0/synth/Seg7_Dev_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'SPIO' [D:/COLab/OExp02-IP2SOC/IP/SPIO.v:15]
+WARNING: [Synth 8-7071] port 'led_clk' of module 'SPIO' is unconnected for instance 'U7' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:132]
+WARNING: [Synth 8-7071] port 'led_sout' of module 'SPIO' is unconnected for instance 'U7' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:132]
+WARNING: [Synth 8-7071] port 'led_clrn' of module 'SPIO' is unconnected for instance 'U7' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:132]
+WARNING: [Synth 8-7071] port 'LED_PEN' of module 'SPIO' is unconnected for instance 'U7' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:132]
+WARNING: [Synth 8-7071] port 'GPIOf0' of module 'SPIO' is unconnected for instance 'U7' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:132]
+WARNING: [Synth 8-7023] instance 'U7' of module 'SPIO' has 12 connections declared, but only 7 given [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:132]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/COLab/OExp02-IP2SOC/IP/clk_div.v:15]
+INFO: [Synth 8-6157] synthesizing module 'SAnti_jitter' [D:/COLab/OExp02-IP2SOC/IP/SAnti_jitter.v:15]
+WARNING: [Synth 8-7071] port 'readn' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:153]
+WARNING: [Synth 8-7071] port 'Key_x' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:153]
+WARNING: [Synth 8-7071] port 'Key_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:153]
+WARNING: [Synth 8-7071] port 'Key_ready' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:153]
+WARNING: [Synth 8-7071] port 'pulse_out' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:153]
+WARNING: [Synth 8-7071] port 'CR' of module 'SAnti_jitter' is unconnected for instance 'U9' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:153]
+WARNING: [Synth 8-7023] instance 'U9' of module 'SAnti_jitter' has 13 connections declared, but only 7 given [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:153]
+INFO: [Synth 8-6157] synthesizing module 'Counter_x' [D:/COLab/OExp02-IP2SOC/IP/Counter_x.v:15]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [D:/COLab/OExp02-IP2SOC/IP/VGA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VgaController' [D:/COLab/OExp02-IP2SOC/IP/VgaController.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VgaController' (0#1) [D:/COLab/OExp02-IP2SOC/IP/VgaController.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VgaDisplay' [D:/COLab/OExp02-IP2SOC/IP/VgaDisplay.v:23]
+INFO: [Synth 8-3876] $readmem data file 'vga_debugger.mem' is read successfully [D:/COLab/OExp02-IP2SOC/IP/VgaDisplay.v:37]
+INFO: [Synth 8-3876] $readmem data file 'font_8x16.mem' is read successfully [D:/COLab/OExp02-IP2SOC/IP/VgaDisplay.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDisplay' (0#1) [D:/COLab/OExp02-IP2SOC/IP/VgaDisplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VgaDebugger' [D:/COLab/OExp02-IP2SOC/IP/VgaDebugger.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Ascii' [D:/COLab/OExp02-IP2SOC/IP/Hex2Ascii.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Ascii' (0#1) [D:/COLab/OExp02-IP2SOC/IP/Hex2Ascii.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDebugger' (0#1) [D:/COLab/OExp02-IP2SOC/IP/VgaDebugger.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (0#1) [D:/COLab/OExp02-IP2SOC/IP/VGA.v:23]
+WARNING: [Synth 8-7071] port 'rs1' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'rs1_val' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'rs2' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'rs2_val' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'rd' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'reg_i_data' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'reg_wen' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'is_imm' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'is_auipc' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'is_lui' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'imm' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a_val' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'b_val' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'alu_ctrl' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'cmp_ctrl' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'cmp_res' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'is_branch' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'is_jal' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'is_jalr' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'do_branch' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'pc_branch' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mem_ren' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'csr_wen' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'csr_ind' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'csr_ctrl' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'csr_r_data' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'x0' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'ra' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'sp' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'gp' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'tp' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 't0' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 't1' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 't2' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's0' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's1' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a0' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a1' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a2' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a3' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a4' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a5' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a6' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'a7' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's2' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's3' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's4' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's5' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's6' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's7' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's8' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's9' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's10' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 's11' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 't3' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 't4' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 't5' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 't6' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mstatus_o' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mcause_o' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mepc_o' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mtval_o' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mtvec_o' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mie_o' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7071] port 'mip_o' of module 'VGA' is unconnected for instance 'U11' [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+WARNING: [Synth 8-7023] instance 'U11' of module 'VGA' has 80 connections declared, but only 15 given [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:178]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE' (0#1) [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/new/CSSTE.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1449.328 ; gain = 562.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1449.328 ; gain = 562.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1449.328 ; gain = 562.156
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1449.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/ROM_D/ROM_D/ROM_D_in_context.xdc] for cell 'U2'
+Finished Parsing XDC File [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/ROM_D/ROM_D/ROM_D_in_context.xdc] for cell 'U2'
+Parsing XDC File [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/RAM_B/RAM_B/RAM_B_in_context.xdc] for cell 'U3'
+Finished Parsing XDC File [d:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.gen/sources_1/ip/RAM_B/RAM_B/RAM_B_in_context.xdc] for cell 'U3'
+Parsing XDC File [D:/COLab/OExp02-IP2SOC/IP/A7.xdc]
+Finished Parsing XDC File [D:/COLab/OExp02-IP2SOC/IP/A7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/COLab/OExp02-IP2SOC/IP/A7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CSSTE_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CSSTE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1497.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  AND2 => LUT2: 1 instance 
+  AND3 => LUT3: 11 instances
+  AND4 => LUT4: 9 instances
+  INV => LUT1: 5 instances
+  OR2 => LUT2: 7 instances
+  OR3 => LUT3: 3 instances
+  OR4 => LUT4: 4 instances
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1497.387 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U3. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	 449 Input    4 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+	 449 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "CSSTE/U11/vga_display/display_data_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "CSSTE/U11/vga_display/display_data_reg",trying to implement using LUTRAM
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:05 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|VgaDisplay  | fonts_data | 4096x8        | LUT            | 
+|CSSTE       | p_0_out    | 4096x8        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------------------+-----------+----------------------+---------------+
+|CSSTE       | U11/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64M x 192  | 
++------------+----------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:12 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:12 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives    | 
++------------+----------------------------------+-----------+----------------------+---------------+
+|CSSTE       | U11/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64M x 192  | 
++------------+----------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:13 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U1 has unconnected pin MIO_ready
+CRITICAL WARNING: [Synth 8-4442] BlackBox module U9 has unconnected pin readn
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |SCPU          |         1|
+|2     |ROM_D         |         1|
+|3     |RAM_B         |         1|
+|4     |MIO_BUS       |         1|
+|5     |Multi_8CH32   |         1|
+|6     |SPIO          |         1|
+|7     |clk_div       |         1|
+|8     |SAnti_jitter  |         1|
+|9     |Counter_x     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |Counter_x_bbox    |     1|
+|2     |MIO_BUS_bbox      |     1|
+|3     |Multi_8CH32_bbox  |     1|
+|4     |RAM_B             |     1|
+|5     |ROM_D             |     1|
+|6     |SAnti_jitter_bbox |     1|
+|7     |SCPU_bbox         |     1|
+|8     |SPIO_bbox         |     1|
+|9     |clk_div_bbox      |     1|
+|10    |AND2              |     1|
+|11    |AND3              |    11|
+|12    |AND4              |     9|
+|13    |BUFG              |     1|
+|14    |CARRY4            |    11|
+|15    |INV               |     5|
+|16    |LUT1              |     5|
+|17    |LUT2              |    55|
+|18    |LUT3              |    39|
+|19    |LUT4              |    33|
+|20    |LUT5              |    72|
+|21    |LUT6              |   894|
+|22    |MUXF7             |   216|
+|23    |MUXF8             |    84|
+|24    |OR2               |     7|
+|25    |OR3               |     3|
+|26    |OR4               |     4|
+|27    |RAM64M            |   128|
+|28    |RAM64X1D          |    62|
+|29    |FDRE              |    39|
+|30    |FDSE              |     2|
+|31    |IBUF              |    22|
+|32    |OBUF              |    46|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:17 . Memory (MB): peak = 1497.387 ; gain = 562.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 1497.387 ; gain = 610.215
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/SCPU.edf]
+Finished Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/SCPU.edf]
+Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/MIO_BUS.edf]
+Finished Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/MIO_BUS.edf]
+Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/Multi_8CH32.edf]
+Finished Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/Multi_8CH32.edf]
+Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/SPIO.edf]
+Finished Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/SPIO.edf]
+Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/clk_div.edf]
+Finished Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/clk_div.edf]
+Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/SAnti_jitter.edf]
+Finished Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/SAnti_jitter.edf]
+Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/Counter_x.edf]
+Finished Parsing EDIF File [D:/COLab/OExp02-IP2SOC/IP/Counter_x.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1497.387 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 960 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1500.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 230 instances were transformed.
+  AND2 => LUT2: 1 instance 
+  AND3 => LUT3: 11 instances
+  AND4 => LUT4: 9 instances
+  INV => LUT1: 5 instances
+  OR2 => LUT2: 7 instances
+  OR3 => LUT3: 3 instances
+  OR4 => LUT4: 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 62 instances
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: d25d7719
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 85 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:28 . Memory (MB): peak = 1500.824 ; gain = 1024.230
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1500.824 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/COLab/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/CSSTE.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CSSTE_utilization_synth.rpt -pb CSSTE_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 14:05:13 2024...
