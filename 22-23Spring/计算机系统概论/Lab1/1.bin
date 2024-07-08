@@ -1,0 +1,38 @@
+0011 0000 0000 0000     ; .ORIG x3000
+0010 000 0 1111 1111    ; Using the LD instruction, read the data at x3100 and put it in R1
+0101 001 001 1 00000
+0101 010 010 1 00000
+0101 011 011 1 00000
+0101 110 110 1 00000    ; Clear R1,R2,R3 and R6 to zero
+0001 001 001 1 00001    ; Add R1 to one
+0101 010 001 0 00 000   ; R1 and R0 are bitwise combined and the result is stored in R2
+0000 010 0 0000 1110    ; If R2 is 0, jump to the ZERO label
+0001 011 011 1 00001    ; If R2 is not 0, add R3 by 1
+0010 100 0 0001 1000    ; Load the constant 3 into the R4 register
+1001 101 011 111111     ; A bitwise inverse operation is performed on R3 and the result is stored in R5
+0001 101 101 1 00001    ; Adding 1 to R5 is the same as adding 1 inversely to R3
+0001 100 100 0 00 101   ; R4 and R5 are added and the result is stored in R4
+0000 010 0 0001 0001    ; If R3 is equal to 3, then jump to EQUAL_THREE
+0101 110 110 1 00001    ; R6 adds 1 on each cycle
+0010 100 0 0001 0011    ; Load the constant 16 into the R4 register
+1001 101 110 111111     ; The reverse operation is performed on R6 and the result is stored in R5
+0001 101 101 1 00001    ; Adding 1 to R5 is equivalent to adding 1 to R6 inversely
+0001 100 100 0 00 101   ; R4 and R5 are added and the result is stored in R4
+0000 010 0 0001 0000    ; If R6=16, end
+0001 001 001 0 00 001   ; Adding R1 to itself is equivalent to moving one digit to the left
+0000 111 1 1111 0000    ; Continue the cycle
+0101 011 011 1 00000    ; ZERO LABEL If R2 is 0, set R3 to 0
+0001 001 001 0 00 001   ; Adding R1 to itself is 
+0001 110 110 1 00001    ; R6 adds 1 on each cycle
+0010 100 0 0000 1001    ; Load the constant 16 into the R4 register
+1001 101 110 111111     ; R6 is reversed bit by bit and the result is stored in R5
+0001 101 101 1 00001    ; Adding 1 to R5 is equivalent to adding 1 to R6 inversely
+0001 100 100 0 00 101   ; R4 and R5 are added and the result is stored in R4
+0000 010 0 0000 0110    ; If R6=16, end
+0000 111 1 1110 0111    ; Continue the cycle
+0101 010 010 1 00000    ; EQUAL
+0001 010 010 1 00001    ; Set R2 to 1, that means R3 is equal to 3
+0000 111 0 0000 0010    ; End routine
+0000 0000 0000 0011     ; 3
+0000 0000 0001 0000     ; 16
+1111 0000 0010 0101     ; End routine
