@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.ncd
+OUTFILE=/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=/home/proton/Lab/Lab13/LEDP2S_sim
+LICENSE=WebPack
+USER_INFO=__0_0_0

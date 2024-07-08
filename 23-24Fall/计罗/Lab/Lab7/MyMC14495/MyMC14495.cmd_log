@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MyMC14495_drc.vf -w /home/mdlws/LCDF/MyMC14495/MyMC14495.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog MyMC14495.vf -w /home/mdlws/LCDF/MyMC14495/MyMC14495.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MyMC14495 /home/mdlws/LCDF/MyMC14495/MyMC14495.sch /home/mdlws/LCDF/MyMC14495/MyMC14495.sym 

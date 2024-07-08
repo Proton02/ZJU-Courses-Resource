@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/zjdxzn/lab13/SEGP2S/SEGP2S.ncd
+OUTFILE=/home/zjdxzn/lab13/SEGP2S/SEGP2S.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=/home/zjdxzn/lab13/SEGP2S
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/proton/Lab/Lab12/MyRegCounter/MyRegister4b.v -lang verilog -prj MyRegCounter -o MyRegister4b.spl -module MyRegister4b -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MyRegister4b.spl /home/proton/Lab/Lab12/MyRegCounter/MyRegister4b.sym 

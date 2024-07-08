@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog myALU_drc.vf -w /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myALU.sch 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myALU.sch myALU.tfi 
+sch2sym -intstyle ise -family kintex7 -refsym myALU /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myALU.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myALU.sym 

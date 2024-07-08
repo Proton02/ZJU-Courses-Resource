@@ -1,0 +1,4 @@
+verilog work "../../lab7/DispNum/clkdiv.v"
+verilog work "../../lab12/MyRegCounter/MyRegister4b.v"
+verilog work "../../lab12/MyRegCounter/Load_Gen.v"
+verilog work "../LEDP2S/Regtrans4b.v"

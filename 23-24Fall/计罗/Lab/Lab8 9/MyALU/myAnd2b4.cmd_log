@@ -1,0 +1,9 @@
+sch2hdl -intstyle ise -family kintex7 -verilog myAnd2b4_drc.vf -w /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym myAnd2b4 /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sym 
+sch2sym -intstyle ise -family kintex7 -refsym myAnd2b4 /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog myAnd2b4_drc.vf -w /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym myAnd2b4 /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sym 
+sch2sym -intstyle ise -family kintex7 -refsym myAnd2b4 /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym myAnd2b4 /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/myAnd2b4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog myAnd2b4_drc.vf -w /home/proton/Lab/Lab8/MyALU/myAnd2b4.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym myAnd2b4 /home/proton/Lab/Lab8/MyALU/myAnd2b4.sch /home/proton/Lab/Lab8/MyALU/myAnd2b4.sym 

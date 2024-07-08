@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym Mux4to1b4 /home/mdlws/LCDF/Mux4to1b4_sch/Mux4to1b4.sch /home/mdlws/LCDF/DisplaySync/Mux4to1b4.sym 

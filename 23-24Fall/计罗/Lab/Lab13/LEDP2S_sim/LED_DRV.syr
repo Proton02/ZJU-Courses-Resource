@@ -1,0 +1,741 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Reading design: LED_DRV.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LED_DRV.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LED_DRV"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : LED_DRV
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/Adder1b.vf" into library work
+Parsing module <Adder1b>.
+Analyzing Verilog file "/home/proton/Lab/Lab8/MyALU/pbdebounce.v" into library work
+Parsing module <pbdebounce>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/AddSub1b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub1b>.
+Parsing module <AddSub1b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/AddSub4b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub4b>.
+Parsing module <AddSub1b_MUSER_AddSub4b>.
+Parsing module <AddSub4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyRegCounter/MyRegister4b.v" into library work
+Parsing module <MyRegister4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyRegCounter/Load_Gen.v" into library work
+Parsing module <Load_Gen>.
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyRegCounter/clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/SR_LATCH.vf" into library work
+Parsing module <SR_LATCH>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/SLReg9b.v" into library work
+Parsing module <SLReg9b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" into library work
+Parsing module <Regtrans4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/LED.v" into library work
+Parsing module <LED>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.v" into library work
+Parsing module <LED_DRV>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/DispNum.vf" into library work
+Parsing module <MyMC14495_MUSER_DispNum>.
+Parsing module <Mux4to14b_MUSER_DispNum>.
+Parsing module <Mux4to1_MUSER_DispNum>.
+Parsing module <DisplaySync_MUSER_DispNum>.
+Parsing module <DispNum>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/Mux4to1.vf" into library work
+Parsing module <Mux4to1>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S_sim/Mux4to14b.vf" into library work
+Parsing module <Mux4to14b>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.v" Line 63: Port clk_1ms is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.v" Line 66: Port Qbar is not connected to this instance
+
+Elaborating module <LED_DRV>.
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" Line 39: Port clk_1ms is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" Line 44: Port C0 is not connected to this instance
+
+Elaborating module <Regtrans4b>.
+
+Elaborating module <MyRegister4b>.
+
+Elaborating module <Load_Gen>.
+
+Elaborating module <pbdebounce>.
+
+Elaborating module <clkdiv>.
+WARNING:HDLCompiler:1127 - "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" Line 41: Assignment to clk_div ignored, since the identifier is never used
+
+Elaborating module <AddSub4b>.
+
+Elaborating module <AddSub1b_MUSER_AddSub4b>.
+
+Elaborating module <Adder1b_MUSER_AddSub4b>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+WARNING:HDLCompiler:552 - "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" Line 39: Input port clk_1ms is not connected on this instance
+
+Elaborating module <SLReg9b>.
+
+Elaborating module <FD>.
+
+Elaborating module <SR_LATCH>.
+
+Elaborating module <NOR2>.
+
+Elaborating module <LED>.
+WARNING:HDLCompiler:552 - "/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.v" Line 63: Input port clk_1ms is not connected on this instance
+WARNING:Xst:2972 - "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" line 41. All outputs of instance <m2> of block <clkdiv> are unconnected in block <Regtrans4b>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LED_DRV>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.v".
+WARNING:Xst:2898 - Port 'clk_1ms', unconnected in block instance 'm6', is tied to GND.
+WARNING:Xst:647 - Input <SW<13:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/proton/Lab/Lab13/LEDP2S_sim/LED_DRV.v" line 66: Output port <Qbar> of the instance <m7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <LED_DRV> synthesized.
+
+Synthesizing Unit <Regtrans4b>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v".
+WARNING:Xst:2898 - Port 'clk_1ms', unconnected in block instance 'm1', is tied to GND.
+INFO:Xst:3210 - "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" line 41: Output port <clkdiv> of the instance <m2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/proton/Lab/Lab13/LEDP2S_sim/Regtrans4b.v" line 44: Output port <C0> of the instance <m3> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Regtrans4b> synthesized.
+
+Synthesizing Unit <MyRegister4b>.
+    Related source file is "/home/proton/Lab/Lab12/MyRegCounter/MyRegister4b.v".
+    Found 4-bit register for signal <OUT>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <MyRegister4b> synthesized.
+
+Synthesizing Unit <Load_Gen>.
+    Related source file is "/home/proton/Lab/Lab12/MyRegCounter/Load_Gen.v".
+    Found 1-bit register for signal <old_btn>.
+    Found 1-bit register for signal <Load_out>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Load_Gen> synthesized.
+
+Synthesizing Unit <pbdebounce>.
+    Related source file is "/home/proton/Lab/Lab8/MyALU/pbdebounce.v".
+    Found 1-bit register for signal <pbreg>.
+    Found 7-bit register for signal <pbshift<6:0>>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <pbdebounce> synthesized.
+
+Synthesizing Unit <AddSub4b>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/AddSub4b.vf".
+    Summary:
+	no macro.
+Unit <AddSub4b> synthesized.
+
+Synthesizing Unit <AddSub1b_MUSER_AddSub4b>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/AddSub4b.vf".
+    Summary:
+	no macro.
+Unit <AddSub1b_MUSER_AddSub4b> synthesized.
+
+Synthesizing Unit <Adder1b_MUSER_AddSub4b>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/AddSub4b.vf".
+    Summary:
+	no macro.
+Unit <Adder1b_MUSER_AddSub4b> synthesized.
+
+Synthesizing Unit <SLReg9b>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/SLReg9b.v".
+    Summary:
+	no macro.
+Unit <SLReg9b> synthesized.
+
+Synthesizing Unit <SR_LATCH>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/SR_LATCH.vf".
+    Summary:
+	no macro.
+Unit <SR_LATCH> synthesized.
+
+Synthesizing Unit <LED>.
+    Related source file is "/home/proton/Lab/Lab13/LEDP2S_sim/LED.v".
+    Found 16-bit register for signal <Register>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <LED> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 25
+ 1-bit register                                        : 15
+ 16-bit register                                       : 1
+ 4-bit register                                        : 4
+ 7-bit register                                        : 5
+# Multiplexers                                         : 4
+ 4-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <pbreg> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <old_btn> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Load_out> has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_0> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_1> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_2> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_3> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbshift_0> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbreg> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <old_btn> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Load_out> has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_0> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_1> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_2> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_3> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbshift_0> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbreg> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <old_btn> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Load_out> has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbshift_0> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbreg> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <old_btn> (without init value) has a constant value of 0 in block <m6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Load_out> has a constant value of 0 in block <m6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_3> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbshift_0> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbreg> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <old_btn> (without init value) has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Load_out> has a constant value of 0 in block <m1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_0> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_2> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_1> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_0> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_1> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pbshift_0> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_2> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <OUT_3> has a constant value of 0 in block <m0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_1> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_1> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_1> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_1> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_1> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_2> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_2> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_2> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_2> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_2> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_3> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_3> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_3> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_3> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_3> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_4> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_4> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_4> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_4> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_4> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_5> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_5> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_5> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_5> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_5> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_6> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_6> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_6> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_6> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pbshift_6> (without init value) has a constant value of 0 in block <p0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <m1> is unconnected in block <m0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <m1> is unconnected in block <m1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <m1> is unconnected in block <m2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <m1> is unconnected in block <m3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <m6> is unconnected in block <LED_DRV>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 100
+ Flip-Flops                                            : 100
+# Multiplexers                                         : 4
+ 4-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit LED_DRV : the following signal(s) form a combinatorial loop: m7/Qbar_DUMMY, SL.
+
+Optimizing unit <LED> ...
+
+Optimizing unit <LED_DRV> ...
+
+Optimizing unit <pbdebounce> ...
+
+Optimizing unit <SLReg9b> ...
+WARNING:Xst:1710 - FF/Latch <m0/m1/p0/pbshift_0> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/p0/pbreg> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbshift_0> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbreg> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbshift_0> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbreg> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbshift_0> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbreg> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbshift_0> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbreg> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m6/Load_out> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m3/m1/Load_out> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m2/m1/Load_out> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/m1/Load_out> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m0/m1/Load_out> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m0/m0/OUT_3> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/p0/pbshift_1> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m0/m0/OUT_2> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m0/m0/OUT_1> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbshift_1> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m0/m0/OUT_0> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/m0/OUT_3> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbshift_1> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/m0/OUT_2> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/m0/OUT_1> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbshift_1> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/m0/OUT_0> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m2/m0/OUT_3> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbshift_1> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m3/m0/OUT_0> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/old_btn> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m3/m0/OUT_1> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/old_btn> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m2/m0/OUT_2> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m3/m0/OUT_2> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/old_btn> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m3/m0/OUT_3> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/old_btn> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m2/m0/OUT_1> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/old_btn> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m2/m0/OUT_0> has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/p0/pbshift_2> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbshift_2> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbshift_2> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbshift_2> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbshift_2> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbshift_3> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbshift_3> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbshift_3> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/p0/pbshift_3> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbshift_3> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbshift_4> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbshift_4> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbshift_4> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbshift_4> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/p0/pbshift_4> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/p0/pbshift_5> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbshift_5> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbshift_5> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbshift_5> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbshift_5> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m6/p0/pbshift_6> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m0/m1/p0/pbshift_6> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m3/m1/p0/pbshift_6> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m1/m1/p0/pbshift_6> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m2/m1/p0/pbshift_6> (without init value) has a constant value of 0 in block <LED_DRV>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LED_DRV, actual ratio is 0.
+FlipFlop m8/Register_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <LED_DRV> :
+	Found 2-bit shift register for signal <m8/Register_1>.
+Unit <LED_DRV> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LED_DRV.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 137
+#      AND2                        : 48
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 18
+#      LUT6                        : 4
+#      OR3                         : 16
+#      VCC                         : 1
+#      XOR2                        : 48
+# FlipFlops/Latches                : 34
+#      FD                          : 33
+#      FDE                         : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 37
+#      IBUF                        : 1
+#      OBUF                        : 36
+# Logical                          : 2
+#      NOR2                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              33  out of  202800     0%  
+ Number of Slice LUTs:                   24  out of  101400     0%  
+    Number used as Logic:                23  out of  101400     0%  
+    Number used as Memory:                1  out of  35000     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     37
+   Number with an unused Flip Flop:       4  out of     37    10%  
+   Number with an unused LUT:            13  out of     37    35%  
+   Number of fully used LUT-FF pairs:    20  out of     37    54%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          53
+ Number of bonded IOBs:                  37  out of    400     9%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUF+BUFG              | 18    |
+LED_CLK_OBUF(LED_CLK1:O)           | NONE(*)(m8/Register_15)| 17    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.411ns (Maximum Frequency: 293.169MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 2.855ns
+   Maximum combinational path delay: 1.049ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.411ns (frequency: 293.169MHz)
+  Total number of paths / destination ports: 305 / 18
+-------------------------------------------------------------------------
+Delay:               3.411ns (Levels of Logic = 4)
+  Source:            m4/m4 (FF)
+  Destination:       m4/m0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: m4/m4 to m4/m0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.282   0.745  m4/m4 (tmp<4>)
+     LUT6:I0->O            2   0.053   0.491  finish<0>2 (finish<0>1)
+     LUT6:I4->O            1   0.053   0.739  finish_INV_12_o1 (finish_INV_12_o)
+     NOR2:I0->O           19   0.053   0.518  m7/XLXI_2 (SL)
+     INV:I->O              1   0.067   0.399  m4/S_L_S_L_OR_17_o1_INV_0 (m4/S_L_S_L_OR_17_o)
+     FD:D                      0.011          m4/m0
+    ----------------------------------------
+    Total                      3.411ns (0.519ns logic, 2.892ns route)
+                                       (15.2% logic, 84.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LED_CLK_OBUF'
+  Clock period: 1.303ns (frequency: 767.460MHz)
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Delay:               1.303ns (Levels of Logic = 0)
+  Source:            m8/Mshreg_Register_1 (FF)
+  Destination:       m8/Register_1 (FF)
+  Source Clock:      LED_CLK_OBUF rising
+  Destination Clock: LED_CLK_OBUF rising
+
+  Data Path: m8/Mshreg_Register_1 to m8/Register_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRLC16E:CLK->Q        1   1.292   0.000  m8/Mshreg_Register_1 (m8/Mshreg_Register_1)
+     FDE:D                     0.011          m8/Register_1
+    ----------------------------------------
+    Total                      1.303ns (1.303ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LED_CLK_OBUF'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.687ns (Levels of Logic = 1)
+  Source:            m8/Register_14 (FF)
+  Destination:       num<14> (PAD)
+  Source Clock:      LED_CLK_OBUF rising
+
+  Data Path: m8/Register_14 to num<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.282   0.405  m8/Register_14 (m8/Register_14)
+     OBUF:I->O                 0.000          num_14_OBUF (num<14>)
+    ----------------------------------------
+    Total                      0.687ns (0.282ns logic, 0.405ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 17 / 2
+-------------------------------------------------------------------------
+Offset:              2.855ns (Levels of Logic = 4)
+  Source:            m5/m4 (FF)
+  Destination:       LED_CLK (PAD)
+  Source Clock:      clk rising
+
+  Data Path: m5/m4 to LED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.282   0.745  m5/m4 (n0026<4>)
+     LUT6:I0->O            2   0.053   0.745  finish<0>1 (finish<0>)
+     LUT6:I0->O            1   0.053   0.413  finish<0>3 (finish)
+     LUT2:I1->O           18   0.053   0.511  LED_CLK1 (LED_CLK_OBUF)
+     OBUF:I->O                 0.000          LED_CLK_OBUF (LED_CLK)
+    ----------------------------------------
+    Total                      2.855ns (0.441ns logic, 2.414ns route)
+                                       (15.4% logic, 84.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.049ns (Levels of Logic = 3)
+  Source:            clk (PAD)
+  Destination:       LED_CLK (PAD)
+
+  Data Path: clk to LED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.485  clk_IBUF (clk_IBUF)
+     LUT2:I0->O           18   0.053   0.511  LED_CLK1 (LED_CLK_OBUF)
+     OBUF:I->O                 0.000          LED_CLK_OBUF (LED_CLK)
+    ----------------------------------------
+    Total                      1.049ns (0.053ns logic, 0.996ns route)
+                                       (5.1% logic, 94.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock LED_CLK_OBUF
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+LED_CLK_OBUF   |    1.303|         |         |         |
+clk            |    0.712|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.411|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.04 secs
+ 
+--> 
+
+
+Total memory usage is 489556 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  149 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

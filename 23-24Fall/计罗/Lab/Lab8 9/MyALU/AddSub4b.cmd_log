@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym AddSub4b /home/proton/Lab/Lab8/MyALU/AddSub4b.sch /home/proton/Lab/Lab8/MyALU/AddSub4b.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub4b_drc.vf -w /home/proton/Lab/Lab8/MyALU/AddSub4b.sch 

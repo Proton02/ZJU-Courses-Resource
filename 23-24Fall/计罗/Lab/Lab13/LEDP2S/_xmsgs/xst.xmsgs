@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab13/LEDP2S/LED_DRV.v" Line 58: Port <arg fmt="%s" index="1">Qbar</arg> is not connected to this instance
+</msg>
+
+<msg type="error" file="HDLCompiler" num="24" delta="new" >"/home/proton/Lab/Lab13/LEDP2S/Regtrans4b.v" Line 14: <arg fmt="%s" index="1">MyRegister4b</arg> expects <arg fmt="%d" index="2">0</arg> arguments
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab13/LEDP2S/Regtrans4b.v" Line 18: Port <arg fmt="%s" index="1">Co</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/proton/Lab/Lab13/LEDP2S/LED_DRV.v" Line 2: Empty module &lt;<arg fmt="%s" index="1">LED_DRV</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

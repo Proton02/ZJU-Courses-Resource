@@ -1,0 +1,3 @@
+verilog work "../../Lab13/SEGP2S/SEGP2S.v"
+verilog work "MyMC14495.vf"
+verilog work "SR_LATCH.vf"

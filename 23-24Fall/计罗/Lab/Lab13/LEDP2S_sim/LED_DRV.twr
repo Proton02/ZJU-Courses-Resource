@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 1 -n
+3 -fastpaths -xml LED_DRV.twx LED_DRV.ncd -o LED_DRV.twr LED_DRV.pcf
+
+Design file:              LED_DRV.ncd
+Physical constraint file: LED_DRV.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED_CLK     |        11.814(R)|      SLOW  |         4.358(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+LED_D0      |         9.650(R)|      SLOW  |         3.786(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+num<0>      |         7.570(R)|      SLOW  |         3.332(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<1>      |         8.482(R)|      SLOW  |         3.469(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<2>      |         8.388(R)|      SLOW  |         3.424(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<3>      |         8.421(R)|      SLOW  |         3.427(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<4>      |         8.428(R)|      SLOW  |         3.432(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<5>      |         8.142(R)|      SLOW  |         3.309(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<6>      |         8.268(R)|      SLOW  |         3.357(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<7>      |         8.391(R)|      SLOW  |         3.426(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<8>      |         8.483(R)|      SLOW  |         3.457(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<9>      |         8.656(R)|      SLOW  |         3.538(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<10>     |         8.604(R)|      SLOW  |         3.527(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<11>     |         8.569(R)|      SLOW  |         3.493(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<12>     |         8.672(R)|      SLOW  |         3.537(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<13>     |         8.805(R)|      SLOW  |         3.602(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<14>     |         8.700(R)|      SLOW  |         3.562(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+num<15>     |         8.868(R)|      SLOW  |         3.620(R)|      FAST  |LED_CLK_OBUF      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.981|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |LED_CLK        |    8.198|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 28 19:04:22 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 855 MB
+
+
+

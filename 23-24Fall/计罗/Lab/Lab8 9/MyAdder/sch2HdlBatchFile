@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab8/MyAdder/AddSub1b.vf,-w,/home/proton/Lab/Lab8/MyAdder/AddSub1b.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab8/MyAdder/AddSub4b.vf,-w,/home/proton/Lab/Lab8/MyAdder/AddSub4b.sch

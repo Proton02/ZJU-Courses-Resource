@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym DisplaySync /home/mdlws/LCDF/DisplaySync/DisplaySync.sch /home/mdlws/LCDF/DispNum/DisplaySync.sym 

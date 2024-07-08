@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w /home/proton/Lab/Project/ping-pong/DispNum.sch DispNum.tfi 

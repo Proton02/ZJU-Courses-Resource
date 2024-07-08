@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym MyAnd2b4 /home/proton/Lab/Lab12/MyALUTrans/MyAnd2b4.sch /home/proton/Lab/Lab12/MyALUTrans/MyAnd2b4.sym 

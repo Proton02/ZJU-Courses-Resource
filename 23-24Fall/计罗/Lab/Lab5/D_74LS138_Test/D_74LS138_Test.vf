@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_74LS138_Test.vf
+// /___/   /\     Timestamp : 10/18/2023 22:43:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_Test/D_74LS138_Test.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_Test/D_74LS138_Test.sch
+//Design Name: D_74LS138_Test
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_74LS138_Test();
+
+   
+   
+endmodule

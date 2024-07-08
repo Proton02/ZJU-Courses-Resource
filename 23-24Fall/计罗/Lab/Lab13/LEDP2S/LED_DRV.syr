@@ -1,0 +1,180 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: LED_DRV.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LED_DRV.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LED_DRV"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : LED_DRV
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Adder1b.vf" into library work
+Parsing module <Adder1b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Mux4to1b4.vf" into library work
+Parsing module <Mux4to1b4>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Mux4to1.vf" into library work
+Parsing module <Mux4to1>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/AddSub1b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub1b>.
+Parsing module <AddSub1b>.
+Analyzing Verilog file "/home/proton/Lab/Lab8/MyALU/clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/MyRegister4b.v" into library work
+Parsing module <MyRegister4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Load_Gen.v" into library work
+Parsing module <Load_Gen>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/DisplaySync.vf" into library work
+Parsing module <D2_4E_HXILINX_DisplaySync>.
+Parsing module <Mux4to1_MUSER_DisplaySync>.
+Parsing module <Mux4to1b4_MUSER_DisplaySync>.
+Parsing module <DisplaySync>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/AddSub4b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub4b>.
+Parsing module <AddSub1b_MUSER_AddSub4b>.
+Parsing module <AddSub4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/ShiftReg8b/SLReg8b.v" into library work
+Parsing module <SLReg8b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/SR_LATCH.vf" into library work
+Parsing module <SR_LATCH>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/SLReg9b.v" into library work
+Parsing module <SLReg9b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Regtrans4b.v" into library work
+Parsing module <Regtrans4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/pbdebounce.v" into library work
+Parsing module <pbdebounce>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/DispNum.vf" into library work
+Parsing module <D2_4E_HXILINX_DispNum>.
+Parsing module <Mux4to1_MUSER_DispNum>.
+Parsing module <Mux4to1b4_MUSER_DispNum>.
+Parsing module <DisplaySync_MUSER_DispNum>.
+Parsing module <DispNum>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/LED_DRV.v" into library work
+Parsing module <LED_DRV>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/MyMC14495.vf" into library work
+Parsing module <MyMC14495>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Mux4to14b.vf" into library work
+Parsing module <Mux4to14b>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/LEDP2S/LED_DRV.v" Line 58: Port Qbar is not connected to this instance
+
+Elaborating module <LED_DRV>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <pbdebounce>.
+ERROR:HDLCompiler:24 - "/home/proton/Lab/Lab13/LEDP2S/Regtrans4b.v" Line 14: MyRegister4b expects 0 arguments
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/LEDP2S/Regtrans4b.v" Line 18: Port Co is not connected to this instance
+Module LED_DRV remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "/home/proton/Lab/Lab13/LEDP2S/LED_DRV.v" Line 2: Empty module <LED_DRV> remains a black box.
+--> 
+
+
+Total memory usage is 329104 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

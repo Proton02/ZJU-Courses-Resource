@@ -1,0 +1,28 @@
+Command line:
+   My74LS161_sim_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50121
+
+Wed Jan  3 12:42:54 2024
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 185.704 Meg
+
+ Total Signals          : 22
+ Total Nets             : 27
+ Total Signal Drivers   : 13
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 120
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 261.206 Meg
+
+Wed Jan  3 12:43:13 2024
+

@@ -1,0 +1,57 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/proton/Lab/Lab14/MyClock_sim/Top_sim_isim_beh.exe -prj /home/proton/Lab/Lab14/MyClock_sim/Top_sim_beh.prj work.Top_sim work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../../Lab7/clkdiv/clkdiv.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../../Lab13/ShiftReg8b/SLReg8b.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../../Lab13/SEGP2S_sim/SegmentDecoder.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../../Lab13/SEGP2S_sim/LED.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/SR_LATCH.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../../Lab13/LEDP2S/SLReg9b.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../../Lab13/LEDP2S/Load_Gen.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/clk_128.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../My74LS161/My74LS161.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/../../Lab13/SEGP2S_sim/SEGP2S.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/Top.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/Top_sim2.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/AddSub1b.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/AddSub4b.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/Adder1b.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock_sim/MyMC14495.vf" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 28: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 29: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 31: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 33: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 36: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 40: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 46: Port SEG_CLR is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock_sim/../../Lab13/SEGP2S_sim/SEGP2S.v" Line 63: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 46: Size mismatch in connection of port <reg_num>. Formal port size is 32-bit while actual signal size is 24-bit.
+Completed static elaboration
+Fuse Memory Usage: 82952 KB
+Fuse CPU Usage: 1340 ms
+Compiling module clk_128
+Compiling module My74LS161
+Compiling module clkdiv
+Compiling module FD
+Compiling module SLReg9b
+Compiling module SLReg8b
+Compiling module Decoder
+Compiling module NOR2
+Compiling module SR_LATCH
+Compiling module Load_Gen
+Compiling module LED
+Compiling module SEGP2S
+Compiling module Top
+Compiling module Top_sim
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable /home/proton/Lab/Lab14/MyClock_sim/Top_sim_isim_beh.exe
+Fuse Memory Usage: 2741468 KB
+Fuse CPU Usage: 1460 ms
+GCC CPU Usage: 1530 ms

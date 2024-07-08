@@ -1,0 +1,10 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab4/LampCtrl_sch/LampCtrl_LampCtrl_sch_tb_isim_beh.exe -prj /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab4/LampCtrl_sch/LampCtrl_LampCtrl_sch_tb_beh.prj work.LampCtrl_LampCtrl_sch_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "/root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab4/LampCtrl_sch/LampCtrl_sim.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "/root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab4/LampCtrl_sch/LampCtrl_sim.v" Line 8: Instantiating <UUT> from unknown module <lamp_ctrl>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

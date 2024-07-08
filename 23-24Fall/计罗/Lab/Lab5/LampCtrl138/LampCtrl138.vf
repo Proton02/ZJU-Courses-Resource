@@ -1,0 +1,138 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LampCtrl138.vf
+// /___/   /\     Timestamp : 10/31/2023 18:27:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab5/LampCtrl138/LampCtrl138.vf -w /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab5/LampCtrl138/LampCtrl138.sch
+//Design Name: LampCtrl138
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_74LS138_MUSER_LampCtrl138(A, 
+                                   B, 
+                                   C, 
+                                   G, 
+                                   G2A, 
+                                   G2B, 
+                                   Y);
+
+    input A;
+    input B;
+    input C;
+    input G;
+    input G2A;
+    input G2B;
+   output [7:0] Y;
+   
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_48;
+   
+   INV  XLXI_1 (.I(A), 
+               .O(XLXN_11));
+   INV  XLXI_2 (.I(B), 
+               .O(XLXN_12));
+   AND2  XLXI_3 (.I0(XLXN_12), 
+                .I1(XLXN_11), 
+                .O(XLXN_2));
+   AND2  XLXI_4 (.I0(XLXN_12), 
+                .I1(A), 
+                .O(XLXN_4));
+   AND2  XLXI_5 (.I0(B), 
+                .I1(XLXN_11), 
+                .O(XLXN_5));
+   INV  XLXI_7 (.I(G), 
+               .O(XLXN_48));
+   NOR3  XLXI_8 (.I0(G2B), 
+                .I1(G2A), 
+                .I2(XLXN_48), 
+                .O(XLXN_8));
+   NAND3  XLXI_9 (.I0(XLXN_7), 
+                 .I1(XLXN_8), 
+                 .I2(XLXN_2), 
+                 .O(Y[0]));
+   NAND3  XLXI_10 (.I0(XLXN_7), 
+                  .I1(XLXN_8), 
+                  .I2(XLXN_4), 
+                  .O(Y[1]));
+   NAND3  XLXI_11 (.I0(XLXN_7), 
+                  .I1(XLXN_8), 
+                  .I2(XLXN_5), 
+                  .O(Y[2]));
+   NAND3  XLXI_12 (.I0(XLXN_7), 
+                  .I1(XLXN_8), 
+                  .I2(XLXN_6), 
+                  .O(Y[3]));
+   NAND3  XLXI_13 (.I0(C), 
+                  .I1(XLXN_8), 
+                  .I2(XLXN_2), 
+                  .O(Y[4]));
+   NAND3  XLXI_14 (.I0(C), 
+                  .I1(XLXN_8), 
+                  .I2(XLXN_4), 
+                  .O(Y[5]));
+   NAND3  XLXI_15 (.I0(C), 
+                  .I1(XLXN_8), 
+                  .I2(XLXN_5), 
+                  .O(Y[6]));
+   NAND3  XLXI_16 (.I0(C), 
+                  .I1(XLXN_8), 
+                  .I2(XLXN_6), 
+                  .O(Y[7]));
+   AND2  XLXI_17 (.I0(B), 
+                 .I1(A), 
+                 .O(XLXN_6));
+   INV  XLXI_19 (.I(C), 
+                .O(XLXN_7));
+endmodule
+`timescale 1ns / 1ps
+
+module LampCtrl138(S1, 
+                   S2, 
+                   S3, 
+                   F);
+
+    input S1;
+    input S2;
+    input S3;
+   output F;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire [7:0] Y;
+   
+   D_74LS138_MUSER_LampCtrl138  XLXI_1 (.A(S3), 
+                                       .B(S2), 
+                                       .C(S1), 
+                                       .G(XLXN_6), 
+                                       .G2A(XLXN_4), 
+                                       .G2B(XLXN_5), 
+                                       .Y(Y[7:0]));
+   GND  XLXI_2 (.G(XLXN_4));
+   GND  XLXI_3 (.G(XLXN_5));
+   VCC  XLXI_4 (.P(XLXN_6));
+   NAND4  XLXI_5 (.I0(Y[7]), 
+                 .I1(Y[4]), 
+                 .I2(Y[2]), 
+                 .I3(Y[1]), 
+                 .O(F));
+endmodule

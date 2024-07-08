@@ -1,0 +1,28 @@
+Command line:
+   SLReg8b_sim_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  37567
+
+Wed Dec 20 19:13:25 2023
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 186.839 Meg
+
+ Total Signals          : 51
+ Total Nets             : 48
+ Total Signal Drivers   : 41
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 68
+ Total Traceable Variables  : 38
+ Total Scalar Nets and Variables : 155
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 262.341 Meg
+
+Wed Dec 20 19:14:23 2023
+

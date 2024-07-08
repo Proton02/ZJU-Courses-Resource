@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab4/LampCtrl_sch/LampCtrl.ncd
+OUTFILE=/root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab4/LampCtrl_sch/LampCtrl.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=/root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab4/LampCtrl_sch
+LICENSE=WebPack
+USER_INFO=__0_0_0

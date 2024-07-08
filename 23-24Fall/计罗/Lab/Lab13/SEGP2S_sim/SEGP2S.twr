@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 1 -n
+3 -fastpaths -xml SEGP2S.twx SEGP2S.ncd -o SEGP2S.twr SEGP2S.pcf -ucf K7.ucf
+
+Design file:              SEGP2S.ncd
+Physical constraint file: SEGP2S.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW<0>       |   -0.826(R)|      FAST  |    3.623(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<1>       |   -0.940(R)|      FAST  |    3.745(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<2>       |   -0.727(R)|      FAST  |    3.587(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<3>       |   -0.838(R)|      FAST  |    3.656(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<4>       |   -0.866(R)|      FAST  |    3.590(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<5>       |   -0.719(R)|      FAST  |    3.653(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<6>       |   -0.667(R)|      FAST  |    3.652(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<7>       |   -0.816(R)|      FAST  |    3.612(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<14>      |   -0.009(R)|      FAST  |    3.060(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+SW<15>      |   -0.359(R)|      FAST  |    2.805(R)|      SLOW  |clk_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+SEG_CLK     |        13.423(R)|      SLOW  |         4.852(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+SEG_DT      |        11.439(R)|      SLOW  |         4.359(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.108|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clk            |SEG_CLK        |    9.439|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 20 20:27:53 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 860 MB
+
+
+

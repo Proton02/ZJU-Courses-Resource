@@ -1,0 +1,250 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/proton/Lab/Project/ball/MyMC14495.vf" into library work
+Parsing module <MyMC14495>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/Mux4to1b4.vf" into library work
+Parsing module <Mux4to1b4>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/Mux4to1.vf" into library work
+Parsing module <Mux4to1>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/SR_LATCH.vf" into library work
+Parsing module <SR_LATCH>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/SLReg9b.v" into library work
+Parsing module <SLReg9b>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/SLReg8b.vf" into library work
+Parsing module <SLReg8b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Load_Gen.v" into library work
+Parsing module <Load_Gen>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/DisplaySync.vf" into library work
+Parsing module <D2_4E_HXILINX_DisplaySync>.
+Parsing module <DisplaySync>.
+Analyzing Verilog file "/home/proton/Lab/Lab7/clkdiv/clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "/home/proton/Lab/Lab14/My74LS161/My74LS161.v" into library work
+Parsing module <My74LS161>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" into library work
+Parsing module <SEGP2S>.
+Analyzing Verilog file "/home/proton/Lab/Lab11/myRevCounter/clk_100ms.v" into library work
+Parsing module <clk_100ms>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/Vga.v" into library work
+Parsing module <Vga>.
+WARNING:HDLCompiler:568 - "/home/proton/Lab/Project/ball/Vga.v" Line 162: Constant value is truncated to fit in <4> bits.
+WARNING:HDLCompiler:568 - "/home/proton/Lab/Project/ball/Vga.v" Line 163: Constant value is truncated to fit in <4> bits.
+WARNING:HDLCompiler:568 - "/home/proton/Lab/Project/ball/Vga.v" Line 164: Constant value is truncated to fit in <4> bits.
+WARNING:HDLCompiler:568 - "/home/proton/Lab/Project/ball/Vga.v" Line 170: Constant value is truncated to fit in <4> bits.
+WARNING:HDLCompiler:568 - "/home/proton/Lab/Project/ball/Vga.v" Line 172: Constant value is truncated to fit in <4> bits.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/ps2_keyboard.v" into library work
+Parsing module <ps2_keyboard>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/DispNum.vf" into library work
+Parsing module <DispNum>.
+Analyzing Verilog file "/home/proton/Lab/Lab14/MyClock/Top.v" into library work
+Parsing module <Myclock>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/Top.v" into library work
+Parsing module <Top>.
+Analyzing Verilog file "/home/proton/Lab/Project/ball/Mux4to14b.vf" into library work
+Parsing module <Mux4to14b>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Top>.
+
+Elaborating module <Vga>.
+WARNING:HDLCompiler:872 - "/home/proton/Lab/Project/ball/Vga.v" Line 104: Using initial value of up_pos since it is never assigned
+WARNING:HDLCompiler:872 - "/home/proton/Lab/Project/ball/Vga.v" Line 105: Using initial value of down_pos since it is never assigned
+WARNING:HDLCompiler:413 - "/home/proton/Lab/Project/ball/Vga.v" Line 121: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/proton/Lab/Project/ball/Vga.v" Line 134: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/proton/Lab/Project/ball/Vga.v" Line 137: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/proton/Lab/Project/ball/Vga.v" Line 316: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/proton/Lab/Project/ball/Vga.v" Line 341: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "/home/proton/Lab/Project/ball/Top.v" Line 61: Assignment to lose ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/proton/Lab/Project/ball/Top.v" Line 62: Assignment to flag ignored, since the identifier is never used
+
+Elaborating module <DispNum>.
+
+Elaborating module <MyMC14495>.
+
+Elaborating module <OR2>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR3>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <DisplaySync>.
+
+Elaborating module <D2_4E_HXILINX_DisplaySync>.
+
+Elaborating module <VCC>.
+
+Elaborating module <Mux4to1b4>.
+
+Elaborating module <Mux4to1>.
+
+Elaborating module <clkdiv>.
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock/Top.v" Line 38: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock/Top.v" Line 39: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock/Top.v" Line 41: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock/Top.v" Line 43: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock/Top.v" Line 46: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab14/MyClock/Top.v" Line 50: Port CO is not connected to this instance
+
+Elaborating module <Myclock>.
+
+Elaborating module <clk_100ms>.
+
+Elaborating module <My74LS161>.
+WARNING:HDLCompiler:413 - "/home/proton/Lab/Lab14/My74LS161/My74LS161.v" Line 21: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:25 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 91: Module <SLReg8b> does not have a port named <clk>.
+WARNING:HDLCompiler:25 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 92: Module <SLReg8b> does not have a port named <clk>.
+WARNING:HDLCompiler:25 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 93: Module <SLReg8b> does not have a port named <clk>.
+WARNING:HDLCompiler:25 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 94: Module <SLReg8b> does not have a port named <clk>.
+WARNING:HDLCompiler:25 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 95: Module <SLReg8b> does not have a port named <clk>.
+WARNING:HDLCompiler:25 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 96: Module <SLReg8b> does not have a port named <clk>.
+WARNING:HDLCompiler:25 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 97: Module <SLReg8b> does not have a port named <clk>.
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 101: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 102: Port clk_1ms is not connected to this instance
+
+Elaborating module <SEGP2S>.
+
+Elaborating module <SLReg9b>.
+
+Elaborating module <FD>.
+
+Elaborating module <SLReg8b>.
+WARNING:HDLCompiler:1499 - "/home/proton/Lab/Project/ball/SLReg8b.vf" Line 23: Empty module <SLReg8b> remains a black box.
+ERROR:HDLCompiler:267 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 91: Cannot find port clk on this module
+Module SEGP2S remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 2: Empty module <SEGP2S> remains a black box.
+WARNING:HDLCompiler:1127 - "/home/proton/Lab/Lab14/MyClock/Top.v" Line 55: Assignment to disp_num ignored, since the identifier is never used
+
+Elaborating module <ps2_keyboard>.
+WARNING:HDLCompiler:1127 - "/home/proton/Lab/Project/ball/ps2_keyboard.v" Line 81: Assignment to data_done ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/proton/Lab/Project/ball/Top.v" Line 71: Assignment to up ignored, since the identifier is never used
+--> 
+
+
+Total memory usage is 333828 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

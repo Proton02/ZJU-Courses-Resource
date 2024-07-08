@@ -1,0 +1,30 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/proton/Lab/Lab12/MyALUTrans/Top_sim_isim_beh.exe -prj /home/proton/Lab/Lab12/MyALUTrans/Top_sim_beh.prj work.Top_sim work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/Adder1b.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/AddSub1b.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/MyOr2b4.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/MyAnd2b4.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/Mux4to1_sch.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/Mux4to1b4.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/AddSub4b.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/MyRegister4b.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/myALU.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/Load_Gen.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/clkdiv.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/Top.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Lab12/MyALUTrans/Top_sim.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:267 - "/home/proton/Lab/Lab12/MyALUTrans/Top_sim.v" Line 12: Cannot find port num on this module
+ERROR:HDLCompiler:25 - "/home/proton/Lab/Lab12/MyALUTrans/Top_sim.v" Line 15: Module <Top> does not have a port named <num>.
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab12/MyALUTrans/Top.v" Line 27: Size mismatch in connection of port <Load>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab12/MyALUTrans/Top.v" Line 28: Size mismatch in connection of port <Load_out>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab12/MyALUTrans/Top.v" Line 33: Size mismatch in connection of port <Load>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab12/MyALUTrans/Top.v" Line 34: Size mismatch in connection of port <Load_out>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab12/MyALUTrans/Top.v" Line 21: Size mismatch in connection of port <Load>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab12/MyALUTrans/Top.v" Line 22: Size mismatch in connection of port <Load_out>. Formal port size is 1-bit while actual signal size is 4-bit.
+WARNING:HDLCompiler:189 - "/home/proton/Lab/Lab12/MyALUTrans/Top.v" Line 38: Size mismatch in connection of port <Co>. Formal port size is 1-bit while actual signal size is 4-bit.
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

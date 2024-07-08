@@ -1,0 +1,116 @@
+############################################################################
+# Timing constraints                                                       #
+############################################################################
+
+   # NET "CLK"                                      TNM_NET = TM_CLK ;
+   # TIMESPEC TS_CLKIN                               = PERIOD "TM_CLK"       20 ns HIGH 50%;
+    
+   # NET "*s_SYS_CLK"                               TNM_NET = TM_SYS_CLK;
+   # TIMESPEC TS_SYS_CLK                             = PERIOD "TM_SYS_CLK"   10 ns HIGH 50%;
+    
+   # NET "*s_SYS_CLK100M"                           TNM_NET = TM_CLK_100M;
+   # TIMESPEC TS_SYS_CLK                             = PERIOD "TM_CLK_100M"  10 ns HIGH 50%;
+    
+   # NET "*s_SYS_CLK50M"                            TNM_NET = TM_CLK_50M ;
+   # TIMESPEC TS_CLK_50M                             = PERIOD "TM_CLK_50M"   20 ns HIGH 50%;
+    
+   # NET "*s_SYS_CLK375M"                           TNM_NET = TM_CLK_250M ;
+   # TIMESPEC TS_CLK_375M                            = PERIOD "TM_CLK_250M"   4 ns HIGH 50%;
+    
+   # NET "*s_TMDS_RXC"                              TNM_NET = TM_TMDS_RXC ;
+   # TIMESPEC TS_TMDS_RXC                            = PERIOD "TM_TMDS_RXC"  20 ns HIGH 50%;
+    
+   # NET "*s_UI_CLK"                                TNM_NET = TM_UI_CLK ;
+   # TIMESPEC TS_UI_CLK                              = PERIOD "TM_UI_CLK"     5 ns HIGH 50%;
+    
+   # TIMESPEC "TS_100M_CLK_to_RXC_CLK"             = FROM "TM_SYS_CLK"  TO "TM_TMDS_RXC"   10 ns DATAPATHONLY ;
+   # TIMESPEC "TS_RXC_CLK_to_100M_CLK"             = FROM "TM_TMDS_RXC" TO "TM_SYS_CLK"    10 ns DATAPATHONLY ;
+    
+   # TIMESPEC "TS_100M_CLK_to_50M_CLK"             = FROM "TM_SYS_CLK"  TO "TM_CLK_50M"    10 ns DATAPATHONLY ;
+   # TIMESPEC "TS_50M_CLK_to_100M_CLK"             = FROM "TM_CLK_50M"  TO "TM_SYS_CLK"    10 ns DATAPATHONLY ;
+    
+   # TIMESPEC "TS_SYS_CLK_to_UI_CLK"               = FROM "TM_SYS_CLK"  TO "TM_UI_CLK"      5 ns DATAPATHONLY ;
+   # TIMESPEC "TS_UI_CLK_to_SYS_CLK"               = FROM "TM_UI_CLK" TO "TM_SYS_CLK"      10 ns DATAPATHONLY ;
+    
+   # TIMESPEC "TS_UI_CLK_to_MIG_CLK"               = FROM "TM_UI_CLK"  TO "TM_MIG_CLK"      5 ns DATAPATHONLY ;
+   # TIMESPEC "TS_MIG_CLK_to_UI_CLK"               = FROM "TM_MIG_CLK" TO "TM_UI_CLK"       5 ns DATAPATHONLY ;
+    
+   # NET "*XRST*"                                  TIG ;
+   # NET "*RST*"                                   TIG ;
+    
+   # TIMESPEC "TS_PADS_to_FFS"                     = FROM PADS("TMDS*") TO FFS  10 ns ;
+   # TIMESPEC "TS_FFS_to_PADS"                     = FROM FFS TO PADS("TMDS*")  10 ns ;
+    
+   # INST "U_HDMI_CTRL/U_LVDS_RX/U_MMCME2_ADV3/clkin1_buf"         LOC = BUFGCTRL_X0Y11 ;
+   # INST "U_HDMI_CTRL/U_LVDS_RX/U_MMCME2_ADV3/mmcm_adv_inst"     LOC = MMCME2_ADV_X1Y2 ;
+    
+############################################################################
+# Location Constraints                                                     #
+############################################################################
+    NET "clk"                                      LOC = AC18      | IOSTANDARD = LVCMOS18 ;
+    NET "rst"                                     LOC = W13       | IOSTANDARD = LVCMOS18 ;
+
+    //NET "segled_clk"                               LOC = M24       | IOSTANDARD = LVCMOS33 ;
+    //NET "SEGLED_CLR"                               LOC = M20       | IOSTANDARD = LVCMOS33 ;
+    //NET "SEGLED_DO"                                LOC = L24       | IOSTANDARD = LVCMOS33 ;      
+    //NET "SEGLED_PEN"                               LOC = R18       | IOSTANDARD = LVCMOS33 ;      
+
+    //NET "LED_CLK"                                  LOC = N26       | IOSTANDARD = LVCMOS33 ;
+    //NET "LED_CLR"                                  LOC = N24       | IOSTANDARD = LVCMOS33 ;
+    //NET "LED_DO"                                   LOC = M26       | IOSTANDARD = LVCMOS33 ;     
+   //NET "LED_PEN"                                  LOC = P18       | IOSTANDARD = LVCMOS33 ;     
+
+    
+    // NET "to_right"                                   LOC = AF13       | IOSTANDARD = LVCMOS15 ;
+    // NET "to_left"                                   LOC = AF10       | IOSTANDARD = LVCMOS15 ;
+
+    NET "bar_move_speed[0]"                                    LOC = AA10      | IOSTANDARD = LVCMOS15 ;
+    NET "bar_move_speed[1]"                                    LOC = AB10      | IOSTANDARD = LVCMOS15 ;
+    NET "bar_move_speed[2]"                                    LOC = AA13      | IOSTANDARD = LVCMOS15 ;
+    NET "bar_move_speed[3]"                                    LOC = AA12      | IOSTANDARD = LVCMOS15 ;
+    
+	 // NET "buzzer" LOC = AF24 | IOSTANDARD = LVCMOS33;
+
+
+
+    NET "OutBlue[3]"                                 LOC = T23       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutBlue[1]"                                 LOC = R20       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutBlue[2]"                                 LOC = T22       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutBlue[0]"                                 LOC = T20       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutGreen[0]"                                 LOC = R22       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutGreen[1]"                                 LOC = R23       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutGreen[2]"                                 LOC = T24       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+	 NET "OutGreen[3]"                                 LOC = T25       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    // NET "g[3]"                                 LOC = T25       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutRed[0]"                                 LOC = N21       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutRed[1]"                                 LOC = N22       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "OutRed[2]"                                 LOC = R21       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+	 NET "OutRed[3]"                                 LOC = P21       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    // NET "r[3]"                                 LOC = P21       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "HSYNC"                                       LOC = M22       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+    NET "VSYNC"                                       LOC = M21       | IOSTANDARD = LVCMOS33 | SLEW = FAST ;
+	 
+
+	NET "Segment[0]" LOC = AB22 | IOSTANDARD = LVCMOS33;
+	NET "Segment[1]" LOC = AD24 | IOSTANDARD = LVCMOS33;
+	NET "Segment[2]" LOC = AD23 | IOSTANDARD = LVCMOS33;
+	NET "Segment[3]" LOC = Y21 | IOSTANDARD = LVCMOS33;
+	NET "Segment[4]" LOC = W20 | IOSTANDARD = LVCMOS33;
+	NET "Segment[5]" LOC = AC24 | IOSTANDARD = LVCMOS33;
+	NET "Segment[6]" LOC = AC23 | IOSTANDARD = LVCMOS33;
+	NET "Segment[7]" LOC = AA22 | IOSTANDARD = LVCMOS33;
+
+	NET "AN[3]" LOC = AC22 | IOSTANDARD = LVCMOS33;
+	NET "AN[2]" LOC = AB21 | IOSTANDARD = LVCMOS33;
+	NET "AN[1]" LOC = AC21 | IOSTANDARD = LVCMOS33;
+	NET "AN[0]" LOC = AD21 | IOSTANDARD = LVCMOS33;
+	NET "SW" LOC = AF10 | IOSTANDARD = LVCMOS15;
+
+	NET "SEG_CLK" LOC = M24   | IOSTANDARD = LVCMOS33 ;
+	NET "SEG_CLR" LOC = M20   | IOSTANDARD = LVCMOS33 ;
+	NET "SEG_DT" LOC = L24    | IOSTANDARD = LVCMOS33 ;
+	NET "SEG_EN" LOC = R18    | IOSTANDARD = LVCMOS33 ; 
+	
+	NET "PS2_clk"	LOC = N18     	| IOSTANDARD = LVCMOS33 ; 
+	NET "PS2_data"	LOC = M19     	| IOSTANDARD = LVCMOS33 ;
+############################################################################

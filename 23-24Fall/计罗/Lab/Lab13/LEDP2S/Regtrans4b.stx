@@ -1,0 +1,79 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/proton/Lab/Lab13/LEDP2S/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/proton/Lab/Lab13/LEDP2S/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Regtrans4b.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Adder1b.vf" into library work
+Parsing module <Adder1b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/AddSub1b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub1b>.
+Parsing module <AddSub1b>.
+Analyzing Verilog file "/home/proton/Lab/Lab8/MyALU/clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/MyRegister4b.v" into library work
+Parsing module <MyRegister4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Load_Gen.v" into library work
+Parsing module <Load_Gen>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/AddSub4b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub4b>.
+Parsing module <AddSub1b_MUSER_AddSub4b>.
+Parsing module <AddSub4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Regtrans4b.v" into library work
+Parsing module <Regtrans4b>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/MyMC14495.vf" into library work
+Parsing module <MyMC14495>.
+Analyzing Verilog file "/home/proton/Lab/Lab13/LEDP2S/Mux4to14b.vf" into library work
+Parsing module <Mux4to14b>.
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.74 secs
+ 
+--> 
+
+
+Total memory usage is 318496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

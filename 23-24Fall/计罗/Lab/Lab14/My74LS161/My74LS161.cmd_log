@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/proton/Lab/Lab14/My74LS161/My74LS161.xst" -ofn "/home/proton/Lab/Lab14/My74LS161/My74LS161.syr" 

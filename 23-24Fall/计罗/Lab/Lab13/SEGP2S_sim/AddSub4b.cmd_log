@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family aartix7 -refsym AddSub4b /home/mdlws/LCDF/MyAdder/AddSub4b.sch /home/mdlws/LCDF/SEGP2S/AddSub4b.sym 

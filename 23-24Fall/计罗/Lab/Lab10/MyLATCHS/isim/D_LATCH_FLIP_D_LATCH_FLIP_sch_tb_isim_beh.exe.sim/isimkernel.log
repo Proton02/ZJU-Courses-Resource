@@ -1,0 +1,28 @@
+Command line:
+   D_LATCH_FLIP_D_LATCH_FLIP_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50323
+
+Wed Nov 29 21:10:45 2023
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 185.704 Meg
+
+ Total Signals          : 47
+ Total Nets             : 24
+ Total Signal Drivers   : 16
+ Total Blocks           : 10
+ Total Primitive Blocks : 7
+ Total Processes        : 19
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 106
+
+ Total Simulation Time: 8.75 sec
+
+ Current Memory Usage: 261.206 Meg
+
+Wed Nov 29 21:10:55 2023
+

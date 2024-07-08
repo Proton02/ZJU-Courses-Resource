@@ -1,0 +1,4 @@
+add instance D_LATCH 816 256 R0 -sn=1
+select figure at 1490 312 8 -branches -sn=1
+undo
+undo

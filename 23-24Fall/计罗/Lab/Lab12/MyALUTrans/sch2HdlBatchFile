@@ -1,0 +1,11 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/AddSub1b.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/AddSub1b.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/Adder1b.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/Adder1b.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/AddSub4b.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/AddSub4b.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/Mux4to1_sch.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/Mux4to1_sch.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/Mux4to1b4.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/Mux4to1b4.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/myALU.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/myALU.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/MyAnd2b4.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/MyAnd2b4.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/MyOr2b4.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/MyOr2b4.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/AddSub1b.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/AddSub1b.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/AddSub4b.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/AddSub4b.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Lab12/MyALUTrans/myALU.vf,-w,/home/proton/Lab/Lab12/MyALUTrans/myALU.sch

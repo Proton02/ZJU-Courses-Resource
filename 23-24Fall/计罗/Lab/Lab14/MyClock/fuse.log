@@ -1,0 +1,60 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/zjdxzn/lab14/MyClock/Top_sim2_isim_beh.exe -prj /home/zjdxzn/lab14/MyClock/Top_sim2_beh.prj work.Top_sim2 work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/MyMC14495.vf" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/../../lab13/ShiftReg8b/SLReg8b.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/SR_LATCH.vf" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/../../lab13/LEDP2S/SLReg9b.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/../../lab13/LEDP2S/LED.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/../../lab12/MyRegCounter/Load_Gen.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/clk_128.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/../My74LS161/My74LS161.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/../../lab13/SEGP2S/SEGP2S.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/Top.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab14/MyClock/Top_sim2.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 47: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 48: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 50: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 52: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 55: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 59: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 91: Port SEG_CLR is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/../../lab13/SEGP2S/SEGP2S.v" Line 122: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab14/MyClock/../../lab13/SEGP2S/SEGP2S.v" Line 123: Port clk_1ms is not connected to this instance
+WARNING:HDLCompiler:189 - "/home/zjdxzn/lab14/MyClock/Top.v" Line 91: Size mismatch in connection of port <reg_num>. Formal port size is 32-bit while actual signal size is 24-bit.
+WARNING:HDLCompiler:189 - "/home/zjdxzn/lab14/MyClock/../../lab13/SEGP2S/SEGP2S.v" Line 124: Size mismatch in connection of port <num>. Formal port size is 16-bit while actual signal size is 64-bit.
+Completed static elaboration
+Fuse Memory Usage: 83048 KB
+Fuse CPU Usage: 910 ms
+Compiling module clk_128
+Compiling module My74LS161
+Compiling module OR2
+Compiling module INV
+Compiling module OR3
+Compiling module OR4
+Compiling module AND4
+Compiling module AND3
+Compiling module AND2
+Compiling module MyMC14495
+Compiling module FD
+Compiling module SLReg9b
+Compiling module SLReg8b
+Compiling module NOR2
+Compiling module SR_LATCH
+Compiling module Load_Gen
+Compiling module LED
+Compiling module SEGP2S
+Compiling module Top
+Compiling module Top_sim2
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable /home/zjdxzn/lab14/MyClock/Top_sim2_isim_beh.exe
+Fuse Memory Usage: 2741432 KB
+Fuse CPU Usage: 960 ms
+GCC CPU Usage: 840 ms

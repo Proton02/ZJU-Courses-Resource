@@ -1,0 +1,25 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab7/Mux4to1b4_sch/Mux4to1b4_Mux4to1b4_sch_tb_isim_beh.exe -prj /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab7/Mux4to1b4_sch/Mux4to1b4_Mux4to1b4_sch_tb_beh.prj work.Mux4to1b4_Mux4to1b4_sch_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab7/Mux4to1b4_sch/Mux4to1b4.vf" into library work
+Analyzing Verilog file "/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab7/Mux4to1b4_sch/Mux4to1b4_vim.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 82728 KB
+Fuse CPU Usage: 760 ms
+Compiling module INV
+Compiling module AND2
+Compiling module OR4
+Compiling module Mux4to1b4
+Compiling module Mux4to1b4_Mux4to1b4_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab7/Mux4to1b4_sch/Mux4to1b4_Mux4to1b4_sch_tb_isim_beh.exe
+Fuse Memory Usage: 2740060 KB
+Fuse CPU Usage: 770 ms
+GCC CPU Usage: 180 ms

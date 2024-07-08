@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym D_LATCH /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/BAMBOO/Lab10/MyLATCHS/D_LATCH.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/BAMBOO/Lab10/MyLATCHS/D_LATCH.sym 

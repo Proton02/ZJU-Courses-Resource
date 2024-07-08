@@ -1,0 +1,10 @@
+Command line:
+   Top_sim2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35875
+
+Thu Dec 21 17:15:04 2023
+
+
+ Elaboration Time: 0.03 sec

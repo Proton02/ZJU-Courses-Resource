@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/zjdxzn/lab13/LEDP2S/LED_DRV.ncd
+OUTFILE=/home/zjdxzn/lab13/LEDP2S/LED_DRV.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=/home/zjdxzn/lab13/LEDP2S
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,28 @@
+Command line:
+   SEGP2S_sim2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55131
+
+Sat Dec 23 15:21:10 2023
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 190.321 Meg
+
+ Total Signals          : 1787
+ Total Nets             : 1124
+ Total Signal Drivers   : 587
+ Total Blocks           : 418
+ Total Primitive Blocks : 327
+ Total Processes        : 846
+ Total Traceable Variables  : 195
+ Total Scalar Nets and Variables : 1849
+
+ Total Simulation Time: 0.27 sec
+
+ Current Memory Usage: 265.822 Meg
+
+Sat Dec 23 17:30:02 2023
+

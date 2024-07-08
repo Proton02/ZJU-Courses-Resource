@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LampCtrl.vf
+// /___/   /\     Timestamp : 10/12/2023 14:43:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /root/Xilinx_ISE_DS_Lin_14.7_1015_1/LampCtrl_sch/LampCtrl.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/LampCtrl_sch/LampCtrl.sch
+//Design Name: LampCtrl
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module LampCtrl(S1, 
+                S2, 
+                S3, 
+                F, 
+                LED);
+
+    input S1;
+    input S2;
+    input S3;
+   output F;
+   output [6:0] LED;
+   
+   wire XLXN_19;
+   wire XLXN_22;
+   wire XLXN_24;
+   wire XLXN_30;
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_37;
+   
+   INV  XLXI_7 (.I(S1), 
+               .O(XLXN_24));
+   INV  XLXI_8 (.I(S2), 
+               .O(XLXN_22));
+   INV  XLXI_10 (.I(S3), 
+                .O(XLXN_19));
+   AND3  XLXI_14 (.I0(XLXN_19), 
+                 .I1(XLXN_22), 
+                 .I2(S1), 
+                 .O(XLXN_30));
+   AND3  XLXI_17 (.I0(XLXN_19), 
+                 .I1(S2), 
+                 .I2(XLXN_24), 
+                 .O(XLXN_35));
+   AND3  XLXI_18 (.I0(S3), 
+                 .I1(XLXN_22), 
+                 .I2(XLXN_24), 
+                 .O(XLXN_36));
+   AND3  XLXI_19 (.I0(S3), 
+                 .I1(S2), 
+                 .I2(S1), 
+                 .O(XLXN_37));
+   OR4  XLXI_20 (.I0(XLXN_37), 
+                .I1(XLXN_36), 
+                .I2(XLXN_35), 
+                .I3(XLXN_30), 
+                .O(F));
+   GND  XLXI_40 (.G(LED[6]));
+   GND  XLXI_41 (.G(LED[5]));
+   GND  XLXI_42 (.G(LED[4]));
+   GND  XLXI_43 (.G(LED[3]));
+   GND  XLXI_44 (.G(LED[2]));
+   GND  XLXI_45 (.G(LED[1]));
+   GND  XLXI_46 (.G(LED[0]));
+endmodule

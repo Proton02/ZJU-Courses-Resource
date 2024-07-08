@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 162: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 163: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 164: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 170: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 172: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">4</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 104: Using initial value of <arg fmt="%s" index="1">up_pos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 105: Using initial value of <arg fmt="%s" index="1">down_pos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 121: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 134: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 137: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 316: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/proton/Lab/Project/ball/Vga.v" Line 341: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/proton/Lab/Project/ball/Top.v" Line 61: Assignment to <arg fmt="%s" index="1">lose</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/proton/Lab/Project/ball/Top.v" Line 62: Assignment to <arg fmt="%s" index="1">flag</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab14/MyClock/Top.v" Line 38: Port <arg fmt="%s" index="1">CO</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab14/MyClock/Top.v" Line 39: Port <arg fmt="%s" index="1">CO</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab14/MyClock/Top.v" Line 41: Port <arg fmt="%s" index="1">CO</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab14/MyClock/Top.v" Line 43: Port <arg fmt="%s" index="1">CO</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab14/MyClock/Top.v" Line 46: Port <arg fmt="%s" index="1">CO</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab14/MyClock/Top.v" Line 50: Port <arg fmt="%s" index="1">CO</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/proton/Lab/Lab14/My74LS161/My74LS161.v" Line 21: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 91: Module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 92: Module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 93: Module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 94: Module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 95: Module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 96: Module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="25" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 97: Module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">clk</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 101: Port <arg fmt="%s" index="1">Qbar</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 102: Port <arg fmt="%s" index="1">clk_1ms</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/proton/Lab/Project/ball/SLReg8b.vf" Line 23: Empty module &lt;<arg fmt="%s" index="1">SLReg8b</arg>&gt; remains a black box.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="267" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 91: Cannot find port <arg fmt="%s" index="1">clk</arg> on this module
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/proton/Lab/Lab13/SEGP2S/SEGP2S.v" Line 2: Empty module &lt;<arg fmt="%s" index="1">SEGP2S</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/proton/Lab/Lab14/MyClock/Top.v" Line 55: Assignment to <arg fmt="%s" index="1">disp_num</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/proton/Lab/Project/ball/ps2_keyboard.v" Line 81: Assignment to <arg fmt="%s" index="1">data_done</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/proton/Lab/Project/ball/Top.v" Line 71: Assignment to <arg fmt="%s" index="1">up</arg> ignored, since the identifier is never used
+</msg>
+
+</messages>
+

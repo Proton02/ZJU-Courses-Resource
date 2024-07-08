@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : AddSub1b.vf
+// /___/   /\     Timestamp : 12/14/2023 17:59:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /home/mdlws/LCDF/SEGP2S/AddSub1b.vf -w /home/mdlws/LCDF/MyAdder/AddSub1b.sch
+//Design Name: AddSub1b
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module AddSub1b(A, 
+                B, 
+                Ci, 
+                Ctrl, 
+                Co, 
+                S);
+
+    input A;
+    input B;
+    input Ci;
+    input Ctrl;
+   output Co;
+   output S;
+   
+   wire XLXN_2;
+   
+   Adder1b  XLXI_1 (.A(A), 
+                   .B(XLXN_2), 
+                   .C(Ci), 
+                   .Co(Co), 
+                   .S(S));
+   XOR2  XLXI_2 (.I0(Ctrl), 
+                .I1(B), 
+                .O(XLXN_2));
+endmodule

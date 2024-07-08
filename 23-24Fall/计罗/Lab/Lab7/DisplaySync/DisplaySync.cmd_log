@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family kintex7 -verilog DisplaySync_drc.vf -w /home/mdlws/LCDF/DisplaySync/DisplaySync.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog DisplaySync.vf -w /home/mdlws/LCDF/DisplaySync/DisplaySync.sch 
+sch2sym -intstyle ise -family kintex7 -refsym DisplaySync /home/mdlws/LCDF/DisplaySync/DisplaySync.sch /home/mdlws/LCDF/DisplaySync/DisplaySync.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog DisplaySync_drc.vf -w /home/mdlws/LCDF/DisplaySync/DisplaySync.sch 
+sch2sym -intstyle ise -family kintex7 -refsym DisplaySync /home/mdlws/LCDF/DisplaySync/DisplaySync.sch /home/mdlws/LCDF/DisplaySync/DisplaySync.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym DisplaySync /home/mdlws/LCDF/DisplaySync/DisplaySync.sch /home/mdlws/LCDF/DisplaySync/DisplaySync.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog DisplaySync_drc.vf -w /home/mdlws/LCDF/DisplaySync/DisplaySync.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym DisplaySync /home/mdlws/LCDF/DisplaySync/DisplaySync.sch /home/mdlws/LCDF/DisplaySync/DisplaySync.sym 

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym MyMC14495 /home/mdlws/LCDF/MyMC14495/MyMC14495.sch /home/mdlws/LCDF/DisplaySync/MyMC14495.sym 

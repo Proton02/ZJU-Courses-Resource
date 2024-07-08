@@ -1,0 +1,15 @@
+// Verilog instantiation template created from schematic /home/proton/Lab/Project/ping-pong/DispNum.sch - Fri Jan  5 12:31:08 2024
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   DispNum UUT (
+		.clk(    ), 
+		.rst(    ), 
+		.Hexs(    ), 
+		.points(    ), 
+		.LES(    ), 
+		.AN(    ), 
+		.Segment(    )
+   );

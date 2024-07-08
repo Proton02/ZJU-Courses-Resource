@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/top.ncd
+OUTFILE=/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1fbg676
+WORKINGDIR=/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU
+LICENSE=WebPack
+USER_INFO=__0_0_0

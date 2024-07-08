@@ -1,0 +1,28 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/mdlws/LCDF/MyMC14495/MyMC14495_MyMC14495_sch_tb_isim_beh.exe -prj /home/mdlws/LCDF/MyMC14495/MyMC14495_MyMC14495_sch_tb_beh.prj work.MyMC14495_MyMC14495_sch_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/mdlws/LCDF/MyMC14495/MyMC14495.vf" into library work
+Analyzing Verilog file "/home/mdlws/LCDF/MyMC14495/MyMC14495_sim.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 82740 KB
+Fuse CPU Usage: 1660 ms
+Compiling module OR2
+Compiling module INV
+Compiling module AND4
+Compiling module AND3
+Compiling module OR3
+Compiling module OR4
+Compiling module AND2
+Compiling module MyMC14495
+Compiling module MyMC14495_MyMC14495_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 10 Verilog Units
+Built simulation executable /home/mdlws/LCDF/MyMC14495/MyMC14495_MyMC14495_sch_tb_isim_beh.exe
+Fuse Memory Usage: 2740088 KB
+Fuse CPU Usage: 1710 ms
+GCC CPU Usage: 910 ms

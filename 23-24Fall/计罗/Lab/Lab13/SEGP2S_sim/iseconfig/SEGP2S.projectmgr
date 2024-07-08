@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="SEGP2S" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m0 - Regtrans4b/m4 - AddSub4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m1 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m2 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m3 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m4 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m5 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m6 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v/m7 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m0 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m1 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m2 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m3 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m4 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m5 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m6 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S.v/m7 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m0 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m1 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m2 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m3 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m4 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m5 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m6 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S.v/m7 - Regtrans4b</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>SEGP2S (/home/proton/Lab/Lab13/SEGP2S_sim/SEGP2S.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >19</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000141000000020000000000000000000000000200000064ffffffff000000810000000300000002000001410000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>SEGP2S (/home/proton/Lab/Lab13/SEGP2S_sim/SEGP2S.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a00000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000169000000040101000100000000000000000000000064ffffffff0000008100000000000000040000005000000001000000000000002b00000001000000000000007200000001000000000000007c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000125000000010001000100000000000000000000000064ffffffff000000810000000000000001000001250000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000159000000010000000100000000000000000000000064ffffffff000000810000000000000001000001590000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001480000012001000000060100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/SEGP2S |home|mdlws|LCDF|SEGP2S|SEGP2S.v</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m0 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m1 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m2 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m3 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m4 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m5 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m6 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|mdlws|LCDF|SEGP2S|SEGP2S_sim.v/uut - SEGP2S/m7 - Regtrans4b</ClosedNode>
+         <ClosedNode>/SEGP2S_sim |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S_sim.v/uut - SEGP2S</ClosedNode>
+         <ClosedNode>/SEGP2S_sim2 |home|proton|Lab|Lab13|SEGP2S_sim|SEGP2S_sim2.v/uut - SEGP2S</ClosedNode>
+         <ClosedNode>/SEGP2S_sim2 |home|zjdxzn|lab13|SEGP2S_sim|SEGP2S_sim2.v/uut - SEGP2S</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>SEGP2S_sim2 (/home/proton/Lab/Lab13/SEGP2S_sim/SEGP2S_sim2.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000110000000020000000000000000000000000200000064ffffffff000000810000000300000002000001100000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>SEGP2S_sim2 (/home/proton/Lab/Lab13/SEGP2S_sim/SEGP2S_sim2.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000169000000010000000100000000000000000000000064ffffffff000000810000000000000001000001690000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a00000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a00000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

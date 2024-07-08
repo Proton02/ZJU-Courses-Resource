@@ -1,0 +1,12 @@
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 
+sch2sym -intstyle ise -family kintex7 -refsym D_74LS138 /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w /root/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/D_74LS138_SCH/D_74LS138.sch 

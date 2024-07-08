@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog D_LATCH_FLIP_drc.vf -w /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/BAMBOO/Lab10/MyLATCHS/D_LATCH_FLIP.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_LATCH_FLIP_drc.vf -w /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/BAMBOO/Lab10/MyLATCHS/D_LATCH_FLIP.sch 

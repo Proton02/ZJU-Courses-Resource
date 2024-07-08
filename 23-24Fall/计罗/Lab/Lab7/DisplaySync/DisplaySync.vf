@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DisplaySync.vf
+// /___/   /\     Timestamp : 11/01/2023 10:42:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family kintex7 -verilog DisplaySync.vf -w /home/mdlws/LCDF/DisplaySync/DisplaySync.sch
+//Design Name: DisplaySync
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module DisplaySync(Hexs, 
+                   LES, 
+                   point, 
+                   Scan, 
+                   HEX, 
+                   LE, 
+                   p, 
+                   Segment);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] HEX;
+   output LE;
+   output p;
+   output [7:0] Segment;
+   
+   wire LE_DUMMY;
+   wire p_DUMMY;
+   wire [3:0] HEX_DUMMY;
+   
+   assign HEX[3:0] = HEX_DUMMY[3:0];
+   assign LE = LE_DUMMY;
+   assign p = p_DUMMY;
+   Mux4to1b4  XLXI_1 (.I0(Hexs[3:0]), 
+                     .I1(Hexs[7:4]), 
+                     .I2(Hexs[11:8]), 
+                     .I3(Hexs[15:12]), 
+                     .s(Scan[1:0]), 
+                     .o(HEX_DUMMY[3:0]));
+   MyMC14495  XLXI_2 (.D0(HEX_DUMMY[0]), 
+                     .D1(HEX_DUMMY[1]), 
+                     .D2(HEX_DUMMY[2]), 
+                     .D3(HEX_DUMMY[3]), 
+                     .LE(LE_DUMMY), 
+                     .point(p_DUMMY), 
+                     .a(Segment[0]), 
+                     .b(Segment[1]), 
+                     .c(Segment[2]), 
+                     .d(Segment[3]), 
+                     .e(Segment[4]), 
+                     .f(Segment[5]), 
+                     .g(Segment[6]), 
+                     .p(Segment[7]));
+   Mux4to1_sch  XLXI_3 (.I0(point[0]), 
+                       .I1(point[1]), 
+                       .I2(point[2]), 
+                       .I3(point[3]), 
+                       .s(Scan[1:0]), 
+                       .o(p_DUMMY));
+   Mux4to1_sch  XLXI_4 (.I0(LES[0]), 
+                       .I1(LES[1]), 
+                       .I2(LES[2]), 
+                       .I3(LES[3]), 
+                       .s(Scan[1:0]), 
+                       .o(LE_DUMMY));
+endmodule

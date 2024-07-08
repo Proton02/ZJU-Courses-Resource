@@ -1,0 +1,13 @@
+ISim log file
+Running: /home/proton/Lab/Lab14/MyClock_sim/Top_sim_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/proton/Lab/Lab14/MyClock_sim/Top_sim_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+WARNING: File "/home/proton/Lab/Lab14/MyClock_sim/Top.v" Line 13.  For instance uut/m7/, width 32 of formal port reg_num is not equal to width 24 of actual signal num.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 21.00us
+# exit 0

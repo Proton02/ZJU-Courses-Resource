@@ -1,0 +1,8 @@
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/DispNum.vf,-w,/home/proton/Lab/Lab7/DispNum/DispNum.sch
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/Mux4to1.vf,-w,/home/proton/Lab/Lab7/Mux4to1/Mux4to1.sch
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/SR_LATCH.vf,-w,/home/proton/Lab/Lab13/LEDP2S/SR_LATCH.sch
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/DisplaySync.vf,-w,/home/proton/Lab/Lab7/DisplaySync/DisplaySync.sch
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/Mux4to1b4.vf,-w,/home/proton/Lab/Lab7/Mux4to1b4/Mux4to1b4.sch
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/SLReg8b.vf,-w,/home/proton/Lab/Lab13/LEDP2S/SLReg8b.sch
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/DispNum.vf,-w,/home/proton/Lab/Lab7/DispNum/DispNum.sch
+sch2hdl,-sympath,/home/proton/Lab/Project/ball/ipcore_dir,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Lab/Project/ball/DisplaySync.vf,-w,/home/proton/Lab/Lab7/DisplaySync/DisplaySync.sch

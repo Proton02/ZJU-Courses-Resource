@@ -1,0 +1,1 @@
+sch2hdl -intstyle ise -family kintex7 -verilog DispNum.vf -w /home/zjdxzn/lab7/DispNum/DispNum.sch 

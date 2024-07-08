@@ -1,0 +1,74 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/proton/Lab/Project/ping-pong/simulation_isim_beh.exe -prj /home/proton/Lab/Project/ping-pong/simulation_beh.prj work.simulation work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/SR_LATCH.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/SLReg9b.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/SLReg8b.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/MyMC14495.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/Mux4to14b.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/Mux4to1.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/Load_Gen.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/SEGP2S.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/My74LS161.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/DisplaySync.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/clk_1s.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/clkdiv.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/Vga.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/ps2_keyboard.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/Myclock.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/DispNum.vf" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/Top.v" into library work
+Analyzing Verilog file "/home/proton/Lab/Project/ping-pong/simulation.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/Myclock.v" Line 53: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/Myclock.v" Line 54: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/Myclock.v" Line 56: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/Myclock.v" Line 58: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/Myclock.v" Line 61: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/Myclock.v" Line 65: Port CO is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/SEGP2S.v" Line 122: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/proton/Lab/Project/ping-pong/SEGP2S.v" Line 123: Port clk_1ms is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 83404 KB
+Fuse CPU Usage: 1100 ms
+Compiling module Vga
+Compiling module clkdiv
+Compiling module AND2
+Compiling module INV
+Compiling module OR4
+Compiling module Mux4to14b_MUSER_DispNum
+Compiling module Mux4to1_MUSER_DispNum
+Compiling module VCC
+Compiling module GND
+Compiling module DisplaySync_MUSER_DispNum
+Compiling module OR2
+Compiling module OR3
+Compiling module AND4
+Compiling module AND3
+Compiling module MyMC14495_MUSER_DispNum
+Compiling module DispNum
+Compiling module clk_1s
+Compiling module My74LS161
+Compiling module MyMC14495
+Compiling module FD
+Compiling module SLReg9b
+Compiling module SLReg8b
+Compiling module NOR2
+Compiling module SR_LATCH
+Compiling module Load_Gen
+Compiling module SEGP2S
+Compiling module Myclock
+Compiling module ps2_keyboard
+Compiling module Top
+Compiling module simulation
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
+Built simulation executable /home/proton/Lab/Project/ping-pong/simulation_isim_beh.exe
+Fuse Memory Usage: 2742724 KB
+Fuse CPU Usage: 1220 ms
+GCC CPU Usage: 3390 ms

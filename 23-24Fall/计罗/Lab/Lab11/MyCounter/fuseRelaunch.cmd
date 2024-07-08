@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab11/MyCounter/Counter4b_Counter4b_sch_tb_isim_beh.exe" -prj "/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab11/MyCounter/Counter4b_Counter4b_sch_tb_beh.prj" "Counter4b_Counter4b_sch_tb" "work.glbl" 

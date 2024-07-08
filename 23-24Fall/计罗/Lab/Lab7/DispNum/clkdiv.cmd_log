@@ -1,0 +1,4 @@
+vhdtdtfi -lib work /home/mdlws/LCDF/clkdiv/clkdiv.v -lang verilog -prj DispNum -o clkdiv.spl -module clkdiv -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl /home/mdlws/LCDF/DispNum/clkdiv.sym 
+vhdtdtfi -lib work /home/mdlws/LCDF/clkdiv/clkdiv.v -lang verilog -prj DispNum -o clkdiv.spl -module clkdiv -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl /home/mdlws/LCDF/DispNum/clkdiv.sym 

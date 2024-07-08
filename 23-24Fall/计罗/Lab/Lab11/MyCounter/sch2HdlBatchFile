@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab11/MyCounter/DispNum_sch.vf,-w,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab11/MyCounter/DispNum_sch.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab11/MyCounter/DisplaySync.vf,-w,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab11/MyCounter/DisplaySync.sch

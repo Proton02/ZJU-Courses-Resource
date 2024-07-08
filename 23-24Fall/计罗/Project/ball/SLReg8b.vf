@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SLReg8b.vf
+// /___/   /\     Timestamp : 01/04/2024 15:48:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath /home/proton/Lab/Project/ball/ipcore_dir -intstyle ise -family kintex7 -verilog /home/proton/Lab/Project/ball/SLReg8b.vf -w /home/proton/Lab/Lab13/LEDP2S/SLReg8b.sch
+//Design Name: SLReg8b
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SLReg8b();
+
+   
+   
+endmodule

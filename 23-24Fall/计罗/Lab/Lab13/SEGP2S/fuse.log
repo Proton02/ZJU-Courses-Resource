@@ -1,0 +1,56 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/zjdxzn/lab13/SEGP2S/SEGP2S_sim_isim_beh.exe -prj /home/zjdxzn/lab13/SEGP2S/SEGP2S_sim_beh.prj work.SEGP2S_sim work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/Adder1b.vf" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/AddSub1b.vf" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/AddSub4b.vf" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/../../lab7/DispNum/clkdiv.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/../../lab12/MyRegCounter/MyRegister4b.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/../../lab12/MyRegCounter/Load_Gen.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/../ShiftReg8b/SLReg8b.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/SegmentDecoder.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/SR_LATCH.vf" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/../LEDP2S/SLReg9b.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/../LEDP2S/Regtrans4b.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/../LEDP2S/LED.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/SEGP2S.v" into library work
+Analyzing Verilog file "/home/zjdxzn/lab13/SEGP2S/SEGP2S_sim.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab13/SEGP2S/SEGP2S.v" Line 73: Port Qbar is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab13/SEGP2S/SEGP2S.v" Line 74: Port clk_1ms is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab13/SEGP2S/../LEDP2S/Regtrans4b.v" Line 34: Port clk_1ms is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/zjdxzn/lab13/SEGP2S/../LEDP2S/Regtrans4b.v" Line 36: Port C0 is not connected to this instance
+WARNING:HDLCompiler:189 - "/home/zjdxzn/lab13/SEGP2S/SEGP2S.v" Line 75: Size mismatch in connection of port <num>. Formal port size is 16-bit while actual signal size is 64-bit.
+Completed static elaboration
+Fuse Memory Usage: 82996 KB
+Fuse CPU Usage: 900 ms
+Compiling module MyRegister4b
+Compiling module Load_Gen
+Compiling module clkdiv
+Compiling module XOR2
+Compiling module AND2
+Compiling module OR3
+Compiling module Adder1b_MUSER_AddSub4b
+Compiling module AddSub1b_MUSER_AddSub4b
+Compiling module AddSub4b
+Compiling module Regtrans4b
+Compiling module FD
+Compiling module SLReg9b
+Compiling module SLReg8b
+Compiling module SegmentDecoder
+Compiling module NOR2
+Compiling module SR_LATCH
+Compiling module LED
+Compiling module SEGP2S
+Compiling module SEGP2S_sim
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 20 Verilog Units
+Built simulation executable /home/zjdxzn/lab13/SEGP2S/SEGP2S_sim_isim_beh.exe
+Fuse Memory Usage: 2741440 KB
+Fuse CPU Usage: 960 ms
+GCC CPU Usage: 700 ms

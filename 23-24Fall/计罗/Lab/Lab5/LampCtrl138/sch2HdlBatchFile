@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab5/LampCtrl138/D_74LS138.vf,-w,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab5/LampCtrl138/D_74LS138.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab5/LampCtrl138/LampCtrl138.vf,-w,/home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab5/LampCtrl138/LampCtrl138.sch

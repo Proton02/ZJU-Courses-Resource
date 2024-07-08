@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym Mux4to1b4 /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/Mux4to1b4.sch /home/proton/Xilinx_ISE_DS_Lin_14.7_1015_1/Lab/Lab8/MyALU/Mux4to1b4.sym 
