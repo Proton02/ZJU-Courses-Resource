@@ -1,0 +1,10 @@
+L.Tson Web_Dev 4 Comp_Graph 3
+K.Hiro Introduct_CS 4 Comp_Net 2 Comp_Graph 1
+K.Weng Oper_System 5 Web_Dev 5
+V.Chu Web_Dev 3 Oper_System 4 Databases 5
+J.Jon Oper_System 2 Databases 5 Introduct_CS 3 Comp_Graph 5
+T.Dixon Comp_Org 4 Oper_System 3 Databases 2 Web_Dev 3
+H.Gu Web_Dev 5 Comp_Org 3 Databases 4 Comp_Graph 3
+G.Ping Oper_System 4 Comp_Net 4 Comp_Org 4 Databases 1
+L.Lee Oper_System 3 Comp_Org 4 Databases 3 Web_Dev 2
+I.Young Oper_System 4
